@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>中州灵网 - 角色馆</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- 密码页 -->
+    <div id="password-page" class="overlay">
+        <div class="password-box">
+            <h2>欢迎进入中州灵网</h2>
+            <input type="password" id="password-input" placeholder="请输入密码" />
+            <button id="password-submit">进入</button>
+            <p id="password-error" class="error-msg"></p >
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div id="main-content" style="display:none;">
+        <header>
+            <h1>中州灵网</h1>
+            <nav>
+                <ul>
+                    <li>首页</li>
+                    <li>角色信息</li>
+                    <li>文章专栏</li>
+                    <li>联系我</li>
+                </ul>
+                <input type="text" id="search-input" placeholder="搜索角色名或文章标题..." />
+            </nav>
+        </header>
+
+        <!-- 头像和昵称 -->
+        <section id="user-profile">
+            < img id="user-avatar" src="default-avatar.png" alt="用户头像" />
+            <input type="file" id="avatar-upload" accept="image/*" />
+            <input type="text" id="nickname-input" placeholder="请输入昵称" maxlength="20" />
+            <button id="save-profile">保存</button>
+        </section>
+
+        <!-- 随机古诗词展示 -->
+        <section id="random-poem">
+            <h2>今日古诗词</h2>
+            <blockquote id="poem-text"></blockquote>
+            <cite id="poem-author"></cite>
+        </section>
+
+        <!-- 角色信息展示 -->
+        <section id="characters" style="display:none;">
+            <h2>角色信息</h2>
+            <div id="character-list"></div>
+        </section>
+
+        <!-- 文章专栏 -->
+        <section id="articles" style="display:none;">
+            <h2>文章专栏</h2>
+            <div id="article-list"></div>
+        </section>
+
+        <!-- 联系我 -->
+        <section id="contact" style="display:none;">
+            <h2>联系我</h2>
+            <p>邮箱：example@example.com</p >
+            <p>社交媒体链接：</p >
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
